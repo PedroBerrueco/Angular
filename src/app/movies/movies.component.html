@@ -1,0 +1,35 @@
+
+
+<div class="container text-center">
+    <div class="row">
+      
+      <div class="col-6">
+        <p>PELIS</p>
+      </div>
+
+      <div class="col-6">
+        <a routerLink="">Ir a home</a>
+      </div>
+      
+    </div>
+    <div class="row">
+      <div *ngFor="let movie of myMovies" class="col-6 g-4">
+        <div class="card">
+            
+            <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{movie.title}}</h5>
+              <p class="card-text">{{movie.overview}}</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        </div>
+      
+    </div>
+  </div>
+
+
+  
+  <!-- KEY API de Pelis.
+    914a645c8758f680d1f845f73b75cd05 -->
